@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Poppins:wght@400;700&display=swap");
+:root {
+  --container-color: whiteSmoke;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h2 {
+  font-family: Poppins;
+}
+
+.first-property {
+  display: flex;
+  background: var(--container-color);
+  height: 200px;
+  width: 100%;
+}
+.first-property .box {
+  height: 75px;
+  width: 75px;
+  background: dodgerblue;
+  text-align: center;
+}
+
+.second-property {
+  display: inline-flex;
+  background-color: var(--container-color);
+  height: 200px;
+  width: 100%;
+}
+.second-property .box {
+  height: 75px;
+  width: 75px;
+  background: dodgerblue;
+  text-align: center;
+}
+
+.third-property {
+  display: inline-flex;
+  background-color: rgb(235, 235, 235);
+  height: 200px;
+  width: 100%;
+}
+.third-property .box {
+  height: 75px;
+  width: 75px;
+  background: dodgerblue;
+  text-align: center;
+}
+
+.fourth-property {
+  display: inline-flex;
+  background-color: var(--container-color);
+  height: 200px;
+  width: 100%;
+}
+.fourth-property .box {
+  height: 75px;
+  width: 75px;
+  background: dodgerblue;
+  text-align: center;
+}
+
+.fifth-property {
+  display: inline-flex;
+  background-color: var(--container-color);
+  height: 200px;
+  width: 100%;
+}
+.fifth-property .box {
+  height: 75px;
+  width: 75px;
+  background: dodgerblue;
+  text-align: center;
+}/*# sourceMappingURL=tuto.css.map */

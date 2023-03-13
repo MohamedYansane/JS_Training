@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Poppins:wght@400;700&display=swap");
+#btn {
+    position: relative;
+    top: 40vh;
+    left: 45%;
+    width: 69px;
+    height: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-color: black;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 8px;
+}
+
+h1,
+p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+    background-color: #8d57b1;
+    text-align: center;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn-box {
+    display: flex;
+    border: 1px solid black;
+    background-color: #000000;
+    justify-content: space-between;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+button {
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins;
+    color: white;
+    background-color: #8d57b1;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

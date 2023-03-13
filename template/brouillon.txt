@@ -1,0 +1,91 @@
+  <div class="navbar">
+        <div class="container">
+            <a href="#">Remember<span>That</span></a>
+            <img src="/images/menu.svg" class="mobile-menu" id="mobile-cta" alt="Open navigatio">
+            <nav>
+                <img src="/images/exit.svg" class="mobile-menu" id="mobile-menu-exit" id="mobile-exit " alt="close menu">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go to premium</a></li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's nitty &amp; gritty</p>
+                <h1>A task App doesn't Stink</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="/images/watch.svg" alt="watch a video" srcset=""> Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="/images/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <ul>
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>0ther awesome features</li>
+            </ul>
+            <img src="/images/person.jpg" alt="Person holding a phone">
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium dicta quam, asperiores maxime nisi. Officia, omnis deserunt necessitatibus itaque quam autem ullam facilis iusto numquam accusamus aspernatur et quisquam
+                        similique totam maiores corporis blanditiis. Commodi, quibusdam excepturi. Veniam sit vitae, officiis maxime qui animi. Minima velit autem ullam quisquam?</blockquote>
+                    <cite>Jone Doe</cite>
+                </li>
+                <li>
+                    <img src="/images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium dicta quam, asperiores maxime nisi. Officia, omnis deserunt necessitatibus itaque quam autem ullam facilis iusto numquam accusamus aspernatur et quisquam
+                        similique totam maiores corporis blanditiis. Commodi, quibusdam excepturi. Veniam sit vitae, officiis maxime qui animi. Minima velit autem ullam quisquam?</blockquote>
+                    <cite>Jone Doe</cite>
+                </li>
+                <li>
+                    <img src="/images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium dicta quam, asperiores maxime nisi. Officia, omnis deserunt necessitatibus itaque quam autem ullam facilis iusto numquam accusamus aspernatur et quisquam
+                        similique totam maiores corporis blanditiis. Commodi, quibusdam excepturi. Veniam sit vitae, officiis maxime qui animi. Minima velit autem ullam quisquam?</blockquote>
+                    <cite>Jone Doe</cite>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+    <section class="conatact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h1>Contact</h1>
+                <form action="" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="message">Message</label>
+                </form>
+            </div>
+        </div>
+    </section>

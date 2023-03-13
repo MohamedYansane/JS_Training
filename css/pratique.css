@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Poppins:wght@400;700&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  padding: 5px;
+}
+.container .head-container {
+  position: relative;
+  background: #ececec;
+  padding: 4px 4px 10px 4px;
+}
+.container .head-container h1,
+.container .head-container p {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 17px;
+  margin: 0px;
+  line-height: 2em;
+}
+.container .head-container .frm-search #txt-search {
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container .sub-container {
+  margin-top: 40px;
+  padding: 0px;
+}
+.container .sub-container h2 {
+  margin: 0px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 17px;
+}
+.container .sub-container .frm-book {
+  padding-left: 8px;
+}
+.container .sub-container .frm-book .ul-book {
+  list-style: none;
+  padding: 0px;
+}
+.container .sub-container .frm-book .ul-book li {
+  border-left: 5px solid #eeeee4;
+  margin-top: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.container .sub-container .frm-book .ul-book li .btn-delete {
+  float: right;
+  font-size: 17px;
+  font-family: Poppins;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #8d57b1;
+  color: white;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.container .sub-container .frm-book .ul-book li span {
+  font-size: 17px;
+  padding-left: 5px;
+  font-family: Poppins;
+}
+.container .sub-container .frm-book .ul-book li:hover {
+  border-color: #8d57b1;
+}
+.container .footer .hide-box {
+  padding: 8px;
+}
+.container .footer .hide-box label {
+  font-family: Poppins;
+  font-size: 17px;
+}
+.container ul {
+  list-style: none;
+  padding: 0px;
+}
+.container ul li {
+  position: relative;
+  padding: 5px;
+}
+.container ul li #txt-add {
+  padding: 10px;
+  border-radius: 8px;
+}
+.container ul li button,
+.container ul li .node-type {
+  padding: 8px;
+  float: right;
+  font-family: Poppins;
+  font-size: 17px;
+  background: #8d57b1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container ul li .btn-add {
+  position: absolute;
+  right: 20%;
+}
+.container .tabbed-content {
+  position: relative;
+  /*p:first-child {
+      font-family: Poppins;
+      font-size: 17px;
+  } p:nth-child(2) */
+}
+.container .tabbed-content .tabs {
+  padding: 0px 8px 0px 8px;
+}
+.container .tabbed-content li {
+  display: inline;
+  background: #8d57b1;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: Poppins;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .tabbed-content li:first-child {
+  position: absolute;
+  text-align: center;
+  top: -3%;
+  left: 80%;
+}
+.container .tabbed-content p {
+  font-family: Poppins;
+  padding: 5px;
+  margin-top: 40px;
+  background: #eeeee4;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container .tabbed-content .panel.active {
+  display: block;
+}
+.container .tabbed-content .panel {
+  display: none;
+}
+
+.node-type {
+  padding: 10px !important;
+}/*# sourceMappingURL=pratique.css.map */

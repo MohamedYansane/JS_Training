@@ -1,0 +1,18 @@
+Exo Dog:
+
+The first two years of a dog’s life count as 10.5 dog years each.
+Each year following equates to 4 dog years.
+Before you start doing the math in your head, let a computer take care of it! With your knowledge of math operators and variables, use JavaScript to convert your human age into dog years.
+let myAge = 24; //declaring and initializing age
+let earlyYears = 2;//initializing earlyYears
+let laterYears, myAgeInDogYears;
+let myName = 'YANSANE'.toLowerCase();
+earlyYears *= 10.5;
+// for the two years accounted we substracted 2 from our age
+myAge-=2;
+// we affected a new value of myAge to lateYears
+laterYears= myAge;
+//assigning a new value to lateYears
+laterYears*=4;
+myAgeInDogYears = earlyYears + laterYears;
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);

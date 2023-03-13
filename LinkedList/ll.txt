@@ -1,0 +1,144 @@
+using namespace std;
+void insert_at_position(int position);
+void delete_at_position(int position);
+void deleteBegin();
+void deleteEnd();
+typedef struct Node{
+    int data;
+    struct Node *next;
+}Node;
+Node *root = NULL, *newnode, *temp;
+int cpt = 0;
+void insert(){
+    int numberOfNode;
+    cout<<"Enter the number of nodes to insert: ";
+    cin>>numberOfNode;
+    while(numberOfNode != 0)
+    {
+        newnode =(Node*)malloc(sizeof(Node));
+        cout<<"Enter a data you wanna insert: ";
+        cin>> newnode->data;
+        newnode->next = 0;
+        if(root == NULL)
+            root = temp = newnode;
+        else{
+            temp->next = newnode;
+            temp = newnode;
+
+        }
+        numberOfNode--;
+    }
+}
+void insertBegin(){
+    newnode =(Node*)malloc(sizeof(Node));
+    cout<<"Enter a data you wanna insert at the beginning: ";
+    cin>> newnode->data;
+    newnode->next = root;
+    root = newnode;
+    cout<<endl;
+}
+void insertEnd(){
+    temp = root;
+    while(temp->next != NULL){
+        temp = temp->next;
+    }
+    newnode =(Node*)malloc(sizeof(Node));
+    cout<<"Enter a data you wanna insert at the end: ";
+    cin>> newnode->data;
+    temp->next = newnode;
+    newnode->next = NULL;
+    cout<<endl;
+    
+}
+void display(){
+    temp = root;
+    cout<<"La liste des noeuds: ";
+    while(temp!=0)
+    {
+        cout<<temp->data<<" ";
+        temp = temp->next;
+        cpt+=1;
+    }
+    cout<<endl;
+}
+void insert_at_position(){
+    int position,i = 1;
+    temp = root;
+    cout<<"Enter a position to insert at: ";
+    cin>>position;
+    if(position < 0 || position > cpt)
+    {
+        cout<<"Invalid position at position: "<<position;
+    }
+    else{
+      
+        while ( i < position)
+        {
+            temp = temp->next;
+            ++i;
+        }
+        newnode = (Node*)malloc(sizeof(Node));
+        cout<<"Enter a data you wanna insert: ";
+        cin>>newnode->data;
+        newnode->next = 0;
+        cout<<"the value of temp->data: "<<temp->data<<endl;
+        newnode->next = temp->next; // always update the right part that the ll part
+        temp->next = newnode;
+    }
+    cout<<"the value of count: "<<cpt<<endl;
+
+}
+
+using prev
+void display(){
+    temp = head;
+    cout<<"La liste des noeuds: ";
+    while(temp != 0)
+    {
+        cout<<temp->data<<" ";
+        temp = temp->next;
+        cpt+=1;
+    }
+    cout<<endl;
+}
+
+void insertAtPosition()
+{
+    int position, i=1;
+    Node *prev;
+    
+    temp = head;
+    cout<<"Enter a position to insert: ";
+    cin>>position;
+    cout<<"the value of cpt at insert: "<<cpt<<endl;
+
+    if(position < 0 || position > cpt)
+    {
+        cout<<"Invalid position: "<<position<<endl;
+    }
+    else{
+        
+        while(i < position)
+        {
+            prev = temp;
+            temp = temp->next;
+            i++;
+        }
+        newnode = (Node*)malloc(sizeof(Node));
+        cout<<"Enter a node you wanna insert: ";
+        cin>>newnode->data;
+        newnode->next = temp;
+        prev->next = newnode;
+        
+    }
+    cout<<endl;
+    cout<<"after insertion new node: ";
+    display();
+}
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    insert();
+    display();
+    
+    return 0;
+}

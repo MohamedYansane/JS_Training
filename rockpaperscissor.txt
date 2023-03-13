@@ -1,0 +1,13 @@
+Rock Paper Scissor is a classic two player game
+the outcome 
+1- Rock destroys scissors;
+2- Scissors cut paper;
+3- Paper cover rock;
+if there's a tie the game end;
+look the png for more the rest i'll write
+our code will break the game into two parts
+1 - Get the user's choice
+2 - Get the computer choice
+3 - Compare the two choices and determine the winner 
+4 - Start the program and display the result 
+ 

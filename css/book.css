@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Poppins:wght@400;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 5px;
+  width: 100vw !important;
+}
+.container h1,
+.container h2,
+.container p {
+  font-family: Helvetica;
+  text-align: center;
+}
+.container .book-title {
+  font-size: 20px;
+}
+.container .head-container {
+  position: relative;
+  background-color: #eeeee4;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
+.container .head-container h1 {
+  font-size: 20px;
+  padding-top: 8px;
+}
+.container .head-container p {
+  margin: 8px;
+  font-size: 12px;
+}
+.container .head-container a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 9px;
+}
+.container .head-container .search-input {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.container .head-container .search-input .c-search {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.ul-book {
+  list-style: none;
+  padding-left: 8px;
+}
+.ul-book .list-book:hover {
+  border-color: #8d57b1;
+}
+.ul-book .list-book {
+  border-left: 5px solid #eeeee4;
+  height: 45px;
+  padding-left: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-top: 12px;
+}
+.ul-book .list-book .quote {
+  font-family: Helvetica;
+  font-size: 20px;
+}
+.ul-book .list-book .btn-primary:hover {
+  background-color: #2f2336;
+}
+.ul-book .list-book .btn-primary {
+  float: right;
+  cursor: pointer;
+  background-color: #8d57b1;
+  font-family: Arial !important;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.book-container {
+  position: relative;
+  padding: 10px;
+}
+.book-container .sub-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+#add-book .checkbox-container {
+  padding-left: 15px;
+}
+#add-book .checkbox-container .hide-text {
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
+.footer {
+  list-style: none;
+  margin-top: 30px;
+  padding: 8px;
+}
+.footer li .btn-node {
+  border-radius: 8px;
+  background-color: #8d57b1;
+  width: 27% !important;
+  padding: 10px;
+  color: #fff;
+}
+.footer li .btn-primary {
+  float: right;
+  border-radius: 8px;
+  background-color: #8d57b1;
+  width: 23% !important;
+  padding: 10px;
+  color: #fff;
+}
+.footer li .search-input {
+  padding: 10px;
+  border-radius: 8px;
+  width: 40%;
+}
+
+span {
+  text-align: center;
+}
+
+.tabbed-content {
+  position: relative;
+  /*p:first-child {
+      font-family: Helvetica;
+      font-size: 17px;
+  } p:nth-child(2) */
+}
+.tabbed-content .tabs {
+  padding: 0px 8px 0px 8px;
+}
+.tabbed-content li {
+  display: inline;
+  background: #8d57b1;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: Helvetica;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.tabbed-content li:first-child {
+  position: absolute;
+  text-align: center;
+  top: -3%;
+  left: 80%;
+}
+.tabbed-content p {
+  font-family: Helvetica;
+  padding: 5px;
+  margin-top: 40px;
+  background: #eeeee4;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.tabbed-content .panel.active {
+  display: block;
+}
+.tabbed-content .panel {
+  display: none;
+}
+
+/* @media screen and (min-width: 370px) and (max-width: 397px) {
+    .footer {
+        margin-top: 30px;
+        .btn-primary {
+            border-radius: 8px;
+            background-color: $primary-color;
+            width: 30% !important;
+            padding: 10px;
+            color: #fff;
+        }
+        .search-input {
+            padding: 10px;
+            border-radius: 8px;
+            width: 60%;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+        }
+    }
+}*//*# sourceMappingURL=book.css.map */

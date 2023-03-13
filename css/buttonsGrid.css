@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+  padding: 50px;
+}
+
+#btns {
+  width: 75%;
+  padding-left: 40px;
+}
+
+button {
+  width: 30%;
+  height: 48px;
+  font-size: 24px;
+}/*# sourceMappingURL=buttonsGrid.css.map */

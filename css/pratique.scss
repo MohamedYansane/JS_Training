@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Poppins:wght@400;700&display=swap');
+$color-container: #eeeee4;
+$primary-color: #8d57b1;
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    padding: 5px;
+    .head-container {
+        position: relative;
+        background: #ececec;
+        padding: 4px 4px 10px 4px;
+        h1,
+        p {
+            text-align: center;
+            font-family: Poppins;
+            font-size: 17px;
+            margin: 0px;
+            line-height: 2em;
+        }
+        .frm-search {
+            #txt-search {
+                position: absolute;
+                left: 22%;
+                right: 22%;
+                padding: 10px;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+            }
+        }
+    }
+    .sub-container {
+        margin-top: 40px;
+        padding: 0px;
+        h2 {
+            margin: 0px;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 17px;
+        }
+        .frm-book {
+            padding-left: 8px;
+            .ul-book {
+                list-style: none;
+                padding: 0px;
+                li {
+                    border-left: 5px solid $color-container;
+                    margin-top: 15px;
+                    padding: 10px;
+                    cursor: pointer;
+                    .btn-delete {
+                        float: right;
+                        font-size: 17px;
+                        font-family: Poppins;
+                        padding: 8px;
+                        cursor: pointer;
+                        background-color: $primary-color;
+                        color: white;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+                    }
+                    span {
+                        font-size: 17px;
+                        padding-left: 5px;
+                        font-family: Poppins;
+                    }
+                }
+                li:hover {
+                    border-color: #8d57b1;
+                }
+            }
+        }
+    }
+    .footer {
+        .hide-box {
+            padding: 8px;
+            label {
+                font-family: Poppins;
+                font-size: 17px;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0px;
+        li {
+            position: relative;
+            padding: 5px;
+            #txt-add {
+                padding: 10px;
+                border-radius: 8px;
+            }
+            button,
+            .node-type {
+                padding: 8px;
+                float: right;
+                font-family: Poppins;
+                font-size: 17px;
+                background: $primary-color;
+                color: white;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .btn-add {
+                position: absolute;
+                right: 20%;
+            }
+        }
+    }
+    .tabbed-content {
+        position: relative;
+        .tabs {
+            padding: 0px 8px 0px 8px;
+        }
+        li {
+            display: inline;
+            background: $primary-color;
+            padding: 10px;
+            color: white;
+            font-size: 17px;
+            font-family: Poppins;
+            text-align: center;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        li:first-child {
+            position: absolute;
+            text-align: center;
+            top: -3%;
+            left: 80%;
+        }
+        /*p:first-child {
+            font-family: Poppins;
+            font-size: 17px;
+        } p:nth-child(2) */
+        p {
+            font-family: Poppins;
+            padding: 5px;
+            margin-top: 40px;
+            background: $color-container;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+        }
+        .panel.active {
+            display: block;
+        }
+        .panel {
+            display: none;
+        }
+    }
+}
+
+.node-type {
+    padding: 10px !important;
+}

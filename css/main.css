@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Poppins:wght@400;700&display=swap");
+/* im gonna create a variable to store blue color inside for my page
+   so every time i need to use a blue color ill call my variable that i created 
+   in css we call it custom property*/
+:root {
+  --primary-color: #007AF3;
+  --color-link: #444444;
+}
+
+body {
+  background: #F2F2F2;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.navbar span {
+  color: var(--primary-color);
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .sub-head {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: gray;
+}
+.left-col h1 {
+  font-size: 2.5em;
+  margin-top: 0.2em;
+}
+.left-col .hero-cta .primary-cta {
+  background: var(--primary-color);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  padding: 0.6em 1.2em;
+  border-radius: 5em;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}/*# sourceMappingURL=main.css.map */

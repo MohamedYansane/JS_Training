@@ -1,0 +1,435 @@
+// i used const because i won't  reassign kelvin
+const kelvin = 0;
+let celsius, fahrenheit, newton;
+// i store a value in celsius
+celsius = kelvin - 273;
+// i use let cause i can reassign the value  of fahrenheit
+// and converted celsius  to fahrenheit
+fahrenheit = celsius * (9/5) + 32;
+// Math.floor return an integer smalll or less
+fahrenheit = Math.floor(fahrenheit);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+// calcul of Newton 
+newton =  Math.floor( celsius *(33/100));
+console.log(`The temperature in Newton is ${newton}.`);
+
+
+Dog Years
+Dogs mature at a faster rate than human beings. We often say a dog’s age can be calculated in “dog years” to account for their growth compared to a human of the same age. In some ways we could say, time moves quickly for dogs — 8 years in a human’s life equates to 45 years in a dog’s life. How old would you be if you were a dog?
+
+Here’s how you convert your age from “human years” to “dog years”:
+
+The first two years of a dog’s life count as 10.5 dog years each.
+Each year following equates to 4 dog years.
+Before you start doing the math in your head, let a computer take care of it! With your knowledge of math operators and variables, use JavaScript to convert your human age into dog years.
+
+
+
+Healthyguide
+Home Codecademy Cookies
+Codecademy Cookies
+Dont log
+
+[
+{
+"domain": ".codecademy.com",
+"expirationDate": 1679228033.615953,
+"hostOnly": false,
+"httpOnly": false,
+"name": "iterableEndUserId",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "free.ude.my07%40gmail.com"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1676107558,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_scid",
+"path": "/",
+"sameSite": "lax",
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "ee0e3670-ce01-4607-b1c3-b0ca5dfcd442"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1650209133,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_gid",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "GA1.2.2116209332.1649943440"
+},
+{
+"domain": "www.codecademy.com",
+"expirationDate": 1651333402.948714,
+"hostOnly": true,
+"httpOnly": true,
+"name": "remember_user_token",
+"path": "/",
+"sameSite": null,
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ilcxc2lOakl6TldNM016RmtNMkk0TkRrMFpUVmxOV05rT1RFMElsMHNJbHBrT1d0M1UxaFRSa001VkdSTVIwRnRWek5FSWl3aU1UWTFNREV5TXpnM05TNHpPRFl5TURFaVhRPT0iLCJleHAiOiIyMDIyLTA0LTMwVDE1OjQ0OjM1LjM4NloiLCJwdXIiOm51bGx9fQ%3D%3D--b7555c52f3a7399167767271a82338775d6738e9"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1650209124,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_uetsid",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "fdfbd3e0bbf711eca7b633ee8097015d"
+},
+{
+"domain": "www.codecademy.com",
+"expirationDate": 1673456826,
+"hostOnly": true,
+"httpOnly": false,
+"name": "__pdst",
+"path": "/",
+"sameSite": "strict",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "b39c246af04249b88e98e137b25d9c3b"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1650728617.134683,
+"hostOnly": false,
+"httpOnly": true,
+"name": "cc_jwt",
+"path": "/",
+"sameSite": null,
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ijh5bjVOcFI2N1FHb0xxQ1lGT3RIRnQtOUIxMGVENHVPNUR0RzJjZmZVS2cifQ.eyJqdGkiOiIxZGZkZjg3OGMxZGZlNjE1MTQ3OTZmODVlN2E0OTEwMSIsImlzcyI6Imh0dHBzOi8vd3d3LmNvZGVjYWRlbXkuY29tLyIsImV4cCI6MTY1MDcyODY4OSwibmJmIjoxNjUwMTIzODg5LCJzdWIiOiJ1c2VyOjYyMzVjNzMxZDNiODQ5NGU1ZTVjZDkxNCIsInVzZXJfaWQiOiI2MjM1YzczMWQzYjg0OTRlNWU1Y2Q5MTQiLCJidXNpbmVzc19zZWF0cyI6W10sInJvbGVzIjp7ImNvZGVjYWRlbXkiOlsicHJvIl19LCJjb3VudHJ5IjoiVVMiLCJhY2hpZXZlbWVudHM6cm9sZSI6InVzZXIiLCJtYW5hZ2VtZW50OnVzZXJfaWQiOiI2MjM1YzczMWQzYjg0OTRlNWU1Y2Q5MTQiLCJtYW5hZ2VtZW50OnJvbGUiOiJ1c2VyIiwia2FuYmFuOnVzZXJfaWQiOiI2MjM1YzczMWQzYjg0OTRlNWU1Y2Q5MTQiLCJrYW5iYW46cm9sZSI6InVzZXIifQ.dfg1gsygudDYrjzzI_uwy4BbOX3IxMdhqZypRpFKhA_JobhYbz3ed-SUNdaXdc21AjGqe_FkFHsCQ38_ETQ01pBdwSG7jX3wrHZ_2NgO_Er8xp7v5xSppF6rFmaFuMr-N4WeKky50MI-0SP3q5JEfapGuKMETqaVJIeIK2Xstafl8lKXREnfLoaRdCg1jxZWDDIkOJ-iGI6XfRAjsBm_mNu2GU7vQhaz_Rx5AA7W4_vohQe0HjtIoi2wZWc21KThD8oSsAa8ZojMt35mQ1vGzPJt2numsLWkrE_VSCrOknCGNbYfgOHI5V2h3meC3H5Ybqx9kNSa-Xb78lvB3yVtDg"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1713194733,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_ga",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "GA1.2.1766907050.1641920249"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1681630914,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_clck",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "10wtu4y|1|f0o|0"
+},
+{
+"domain": "www.codecademy.com",
+"expirationDate": 1735605303,
+"hostOnly": true,
+"httpOnly": false,
+"name": "addshoppers.com",
+"path": "/",
+"sameSite": null,
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "2%7C1%3A0%7C10%3A1649218991%7C15%3Aaddshoppers.com%7C44%3AYjQ2YmVlZThmYTg0NDQ4Mjk5OWI5Njk1NjE1MzZlNWM%3D%7C5d21b4a81e6ae49a306fc3090e187e358374912f899627e58dbf4c6e3965543a"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1652714721,
+"hostOnly": false,
+"httpOnly": false,
+"name": "rbuid",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "rbos-c616119e-454d-43f4-ad35-b6817c759b75"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1657488578,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_gcl_au",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "1.1.1179727382.1649712578"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1650209140,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_clsk",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "i84b8q|1650122740349|1|1|a.clarity.ms/collect"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1650125616.775093,
+"hostOnly": false,
+"httpOnly": true,
+"name": "__cf_bm",
+"path": "/",
+"sameSite": "no_restriction",
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "uU41cN4Lh0os.9FFcnbl39i5PfcxAvDNGmc_zApcrQg-1650123889-0-AacPfA2p76QzS6Bb1TGBs7nAu4uULy4Uj6LtrUR/X4FKJ82ClTeNfh7Nak4Rq/cwRn3rzCa3FlXn/tmAV3352u5kXJKw0XUQBUaMqNND9evpwKopSgBelOAVK+1gW9na3g=="
+},
+{
+"domain": "www.codecademy.com",
+"expirationDate": 1650124726,
+"hostOnly": true,
+"httpOnly": false,
+"name": "_dd_s",
+"path": "/",
+"sameSite": "strict",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "rum=2&id=39f44a84-74d7-405f-81a6-4ba92cbab0a7&created=1650122671651&expire=1650124708932&logs=1"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1655909070,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_fbp",
+"path": "/",
+"sameSite": "lax",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "fb.1.1642490366036.533999805"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1713194968,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_ga_3LRZM6TM9L",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "GS1.1.1650122728.134.1.1650122968.60"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1705562364,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_ga_DD6GBQYPZL",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "GS1.1.1642490363.11.0.1642490363.0"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1684130145,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_sctr",
+"path": "/",
+"sameSite": "lax",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "1|1649919600000"
+},
+{
+"domain": "www.codecademy.com",
+"expirationDate": 1651333417.135042,
+"hostOnly": true,
+"httpOnly": true,
+"name": "_session_id",
+"path": "/",
+"sameSite": null,
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "4bad55c0453be422fdb294cae60c37fb"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1683818724,
+"hostOnly": false,
+"httpOnly": false,
+"name": "_uetvid",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "dcb22e70730011ec9ee495a657e31410"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1681658722,
+"hostOnly": false,
+"httpOnly": false,
+"name": "ajs_anonymous_id",
+"path": "/",
+"sameSite": "lax",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "594cd845-d7b0-48b5-ac56-27910e0cbb4a"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1681658743,
+"hostOnly": false,
+"httpOnly": false,
+"name": "ajs_user_id",
+"path": "/",
+"sameSite": "lax",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "6235c731d3b8494e5e5cd914"
+},
+{
+"domain": ".codecademy.com",
+"hostOnly": false,
+"httpOnly": true,
+"name": "cc_refresh_token",
+"path": "/",
+"sameSite": null,
+"secure": true,
+"session": true,
+"storeId": null,
+"value": "1b762eb2952d15ee35bbf20b57b79ab361bb0465aec27d27b92537d994626ec5"
+},
+{
+"domain": ".codecademy.com",
+"expirationDate": 1681649441,
+"hostOnly": false,
+"httpOnly": false,
+"name": "fs_uid",
+"path": "/",
+"sameSite": "strict",
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "rs.fullstory.com#P1PZM#5519974141911040:5733821153927168#c4beca54#/1681649441"
+},
+{
+"domain": "www.codecademy.com",
+"hostOnly": true,
+"httpOnly": false,
+"name": "hide_branded_banner-45t5ekO3pxL3tYqUwp6bzT",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": true,
+"storeId": null,
+"value": "true"
+},
+{
+"domain": "www.codecademy.com",
+"hostOnly": true,
+"httpOnly": false,
+"name": "hide_branded_banner-yb0WLVAkzsbxm5GhJznON",
+"path": "/",
+"sameSite": null,
+"secure": false,
+"session": true,
+"storeId": null,
+"value": "true"
+},
+{
+"domain": ".www.codecademy.com",
+"expirationDate": 1673687926,
+"hostOnly": false,
+"httpOnly": false,
+"name": "OptanonAlertBoxClosed",
+"path": "/",
+"sameSite": "lax",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "2022-01-14T09:18:46.127Z"
+},
+{
+"domain": ".www.codecademy.com",
+"expirationDate": 1681659819,
+"hostOnly": false,
+"httpOnly": false,
+"name": "OptanonConsent",
+"path": "/",
+"sameSite": "lax",
+"secure": false,
+"session": false,
+"storeId": null,
+"value": "isIABGlobal=false&datestamp=Sat+Apr+16+2022+08%3A43%3A39+GMT-0700+(Pacific+Daylight+Time)&version=6.8.0&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A1%2CC0004%3A1%2CC0002%3A1&AwaitingReconsent=false&geolocation=US%3BAZ"
+},
+{
+"domain": "www.codecademy.com",
+"expirationDate": 1650131002.948301,
+"hostOnly": true,
+"httpOnly": false,
+"name": "zendesk_identify",
+"path": "/",
+"sameSite": null,
+"secure": true,
+"session": false,
+"storeId": null,
+"value": "true"
+}
+]
+ 
+
+Join Our Telegram Channel here
+Healthyguide
+Healthy guide as the name implies "healthy" "Guide" is a blog basically concerned with healthy tips, Fitness tips, Healthy guides, Tech Tips, Free Premium Accounts and lots more.
+
+Contact us: Freeudemy07@gmail.com
+
+© Copyright - Healthyguide 2022
+
+CONTACT US
+PRIVACY POLICY
+ABOUT US
+DMCA

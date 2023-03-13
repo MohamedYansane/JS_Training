@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/book.css">
+
+</head>
+
+<body>
+    <div class="container" id="wrapper">
+        <div class="head-container" id="head-banner">
+            <h1 class="title">Bookoroma</h1>
+            <p id="book">Book for Ninja</p>
+            <!--https://github.com/MohamedYansane/Quatros-->
+            <a href="#">Yansane Github</a>
+            <form class="search-input" id="search-form">
+                <input type="text" class="c-search" name="search" id="txt-search" placeholder="Search..." autocomplete="off">
+            </form>
+        </div>
+
+        <section class="book-container">
+            <h1 class="book-title">Books to read</h1>
+            <form class="sub-container" id="book-list">
+                <ul class="ul-book" id="ulbook">
+                    <li class="list-book">
+                        <span class="quote " id="txt">Click me to see the results</span> </span>
+                        <span class="btn-primary delete">Delete</span>
+                    </li>
+                    <li class="list-book">
+                        <span class="quote">Dramouss</span>
+                        <span class="btn-primary delete">Delete</span>
+                    </li>
+                    <li class="list-book">
+                        <span class="quote">L'enfant Noir</span>
+                        <span class="btn-primary delete">Delete</span>
+                    </li>
+                    <li class="list-book">
+                        <span class="quote">The enemy.</span>
+                        <span class="btn-primary delete">Delete</span>
+
+                    </li>
+
+                </ul>
+
+            </form>
+
+
+        </section>
+        <form action="" id="add-book">
+            <div class="checkbox-container">
+                <input type="checkbox" name="book-hide" id="hide">
+                <label for="book-hide" class="hide-text">Hide all books</label>
+            </div>
+            <ul class="footer">
+
+                <li>
+                    <input type="text" class="search-input txt-add" placeholder="Add..." name="" id="txtAdd" placeholder="add a book" value="">
+                    <button class="btn-node" onclick="getTypeofNodeandName()" id="btnNode">Node</button>
+                    <button class="btn-primary btnadd" id="addbook">Add</button>
+                </li>
+
+            </ul>
+        </form>
+        <div class="tabbed-content">
+            <ul class="tabs">
+                <li data-target="#about" class="active">About</li>
+                <li data-target="#contact">Contact</li>
+
+            </ul>
+            <div class="panel active" id="about">
+
+                <p>About tabs lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur cum placeat officia delectus similique illo explicabo earum deleniti ullam veritatis voluptas ipsum dolore blanditiis omnis voluptatem totam dolor
+                    nesciunt sequi eum consequuntur laboriosam ex tempore? Vitae esse corrupti velit est corporis minima? Minus minima nobis non! Quis nesciunt quibusdam nulla, temporibus voluptas soluta molestias velit at enim repudiandae aperiam odit
+                    eius nostrum recusandae in delectus incidunt consequuntur, ullam adipisci.</p>
+            </div>
+            <div class="panel " id="contact">
+
+                <p>Contact tabs lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur cum placeat officia delectus similique illo explicabo earum deleniti ullam veritatis voluptas ipsum dolore blanditiis omnis voluptatem totam dolor
+                    nesciunt sequi eum consequuntur laboriosam ex tempore? Vitae esse corrupti velit est corporis minima? Minus minima nobis non! Quis nesciunt quibusdam nulla, temporibus voluptas soluta molestias velit at enim repudiandae aperiam odit
+                    eius nostrum recusandae in delectus incidunt consequuntur, ullam adipisci.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+<script src="/DOM/book.js"></script>
+<script src="/DOM/bookEvent.js" async></script>
+
+</html>

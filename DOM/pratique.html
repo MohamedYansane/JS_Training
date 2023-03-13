@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pratique.css">
+    <title>Document</title>
+    <script src="../DOM/pratique.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-container">
+            <h1>Welcome to Bookoroma </h1>
+            <p>The size of the screen is <span class="size-screen"></span></p>
+            <form action="" class="frm-search" id="frm-search">
+                <input type="text" name="" id="txt-search" placeholder="Search a Book..." autocomplete="off">
+            </form>
+        </div>
+        <div class="sub-container">
+            <h2>Book to read</h2>
+            <form action="" class="frm-book">
+                <ul class="ul-book">
+                    <li>
+                        <span>Dramouss of Camara Laye</span>
+                        <button class="btn-delete">Delete</button>
+                    </li>
+                    <li>
+                        <span>Dramouss of Camara Laye</span>
+                        <button class="btn-delete">Delete</button>
+                    </li>
+                    <li>
+                        <span>The enemy</span>
+                        <button class="btn-delete">Delete</button>
+                    </li>
+                    <li>
+                        <span>Dramouss of Camara Laye</span>
+                        <button class="btn-delete">Delete</button>
+                    </li>
+                </ul>
+            </form>
+            <div class="footer">
+                <div class="hide-box">
+                    <input type="checkbox" name="checkbox" id="hide">
+                    <label for="checkbox">Hide all books</label>
+                </div>
+                <form action="" class="frm-add-book" id="frm-add-book">
+                    <ul>
+                        <li>
+                            <input type="text" name="" id="txt-add" placeholder="Add a book" autocomplete="off">
+                            <span class="node-type">Node</span>
+                            <button class="btn-add">Add </button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+        <div class="tabbed-content">
+            <ul class="tabs">
+                <li data-target="#about" class="active">About</li>
+                <li data-target="#contact">Contact</li>
+
+            </ul>
+            <div class="panel active" id="about">
+
+                <p>About tabs lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur cum placeat officia delectus similique illo explicabo earum deleniti ullam veritatis voluptas ipsum dolore blanditiis omnis voluptatem totam dolor
+                    nesciunt sequi eum consequuntur laboriosam ex tempore? Vitae esse corrupti velit est corporis minima? Minus minima nobis non! Quis nesciunt quibusdam nulla, temporibus voluptas soluta molestias velit at enim repudiandae aperiam odit
+                    eius nostrum recusandae in delectus incidunt consequuntur, ullam adipisci.</p>
+            </div>
+            <div class="panel " id="contact">
+
+                <p>Contact tabs lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur cum placeat officia delectus similique illo explicabo earum deleniti ullam veritatis voluptas ipsum dolore blanditiis omnis voluptatem totam dolor
+                    nesciunt sequi eum consequuntur laboriosam ex tempore? Vitae esse corrupti velit est corporis minima? Minus minima nobis non! Quis nesciunt quibusdam nulla, temporibus voluptas soluta molestias velit at enim repudiandae aperiam odit
+                    eius nostrum recusandae in delectus incidunt consequuntur, ullam adipisci.</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
