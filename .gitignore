@@ -7,3 +7,5 @@ Course-by-Clever-Programmer/
 .msi
 # ignoring all .json files on my repository
 .json
+# ignoring node modules folder on my repository
+node_modules/
