@@ -1,0 +1,5 @@
+#ignorign course by clever folder and tailwind
+Tailwind/
+Course-by-Clever-Programmer/
+# ignores all .zip files
+.zip
