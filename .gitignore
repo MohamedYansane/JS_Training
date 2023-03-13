@@ -11,3 +11,6 @@ Course-by-Clever-Programmer/
 node_modules/
 # ignoring json
 .json
+jsconfig.json
+package-lock.json
+package.json
