@@ -1,5 +1,5 @@
 #ignorign course by clever folder and tailwind
 Tailwind/
 Course-by-Clever-Programmer/
-# ignores all .zip files
+# ignores all .zip files on my repository
 .zip
