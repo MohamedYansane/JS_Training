@@ -2,15 +2,19 @@
 Tailwind/
 Course-by-Clever-Programmer/
 # ignoring all .zip files on my repository
-.zip
+*.zip
 # ignoring all .msi files on my repository
-.msi
+*.msi
 # ignoring all .json files on my repository
-.json
+*.json
 # ignoring node modules folder on my repository
 node_modules/
 # ignoring json
-.json
-jsconfig.json
+*.json
+# i made a mistake that's why i wrote the complete
+# name of the file in order to ignore it
+# the error was i did'nt put the *to ignore all json file
+
+
 package-lock.json
 package.json
